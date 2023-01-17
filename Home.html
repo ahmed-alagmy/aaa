@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جمعيه تنميه المجتمع بكفر حجازي</title>
+    <link rel="icon" href="static/img/logo.png">
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/all.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+    <nav class="nav-home">
+        <img src="static/img/logo.png" alt="جمعيه تنميه المجتمع بكفر حجازي">
+        <ul>
+            <li class="search">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i>  بحث</a>
+                <div class="date">
+                    <span></span>
+                    <input class="sear" type="submit" value="search">
+                    <div class="from">
+                        <label for="from"> من </label>
+                        <input id="from" type="datetime-local">
+                    </div>
+                    <div class="to">
+                        <label for="from"> الى </label>
+                        <input id="from" type="datetime-local">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="medical.html">اضافه كشف</a>
+            </li>
+            <li>
+                <a href="new Patient.html">اضافه مريض</a>
+            </li>
+            <li>
+                <a href="index.html">LogOut</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="contanair-home">
+       <h2>جمعيه تنميه المجتمع بكفر حجازي</h2>
+       <div class="tbscroll">
+        <table border="1">
+            <caption>جدول الكشوفات</caption>
+            <thead>
+                <tr>
+                <th>م</th>
+                <th>اسم المريض</th>
+                <th> رقم الكشف</th>
+                <th> التخصص </th>
+                <th> اسم الدكتور</th>
+                <th> ثمن الكشف </th>
+                <th> تاريخ الكشف</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>1</td>
+                <td>احمد محمد العجمي</td>
+                <td>2</td>
+                <td> عظام</td>
+                <td>على حرحيره</td>
+                <td> 100</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>الاجمالي</td>
+                    <td class="sum" colspan="6">100</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    </div>
+    <script src="static/js/hjs.js"></script>
+</body>
+</html>

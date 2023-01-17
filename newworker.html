@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/img/logo.png">
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/all.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>جمعيه تنميه المجتمع بكفر حجازي</title>
+</head>
+<body>
+    <nav class="nav-home">
+        <img src="static/img/logo.png" alt="جمعيه تنميه المجتمع بكفر حجازي">
+        <ul>
+            <li>
+                <a class="return-home" href="manger.html"></i>Home</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="contanair-manger">
+        <div class="new-worker">
+            <h2>اضافه موظف جديد</h2>
+            <form action="">
+                <input type="text" placeholder="الاسم" required>
+                <input type="number" placeholder="السن" required>
+                <input type="text" placeholder="التليفون" required maxlength="11">
+                <input type="text" placeholder=" الرقم القومي" required maxlength="14">
+                <select name="التخصص" id="">
+                    <option selected value="">التخصص</option>
+                    <option value="تمريض">تمريض</option>
+                    <option value="استقبال">استقبال</option>
+                    <option value="عمال">عمال</option>
+                    <option value="اداره">اداره</option>
+                    <option value="امن">امن</option>
+                </select>
+                <select name=" المؤهل" id="">
+                    <option selected value=""> المؤهل</option>
+                    <option value="بدون"> بدون</option>
+                    <option value="اعداديه"> اعداديه</option>
+                    <option value="ثانويه / دبلوم">ثانويه / دبلوم</option>
+                    <option value="معهد فنى تمريض خاص">معهد فني تمريض خاص</option>
+                    <option value="معهد فنى تمريض حكومي">معهد فنى تمريض حكومي </option>
+                    <option value="كليه تمريض"> كليه تمريض</option>
+                    <option value="مؤهل عالي"> مؤهل عالي</option>
+                </select>
+                <div class="all-radio">
+                <div class="radio">
+                <input type="radio" value="انثى" name="name" >
+                <label>انثى</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="ذكر" name="name">
+                <label>ذكر</label>
+            </div>
+        </div>
+            <input type="submit" value="اضافه" >
+            <input type="reset" value="clear" >
+            </form>
+        </div>
+</body>
+</html>

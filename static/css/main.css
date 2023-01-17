@@ -1,0 +1,700 @@
+:root{
+    --main-color:blueviolet;
+    --sec-color:#bb325e;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    position: relative;
+}
+/* --------------------------- statr login----------------------- */
+.contanair{
+    height: 100vh;
+    margin: auto;
+    background-image: url(../img/clinic.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contanair::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+.contanair .box{
+    position: relative;
+    z-index: 4;
+    background-color: #e2e0e6a6;
+    border-radius: 15px;
+    padding: 20px;
+    width: 450px;
+    max-width: 90%;
+    box-shadow: 5px 5px 10px 1px rgb(0 0 0 / 20%);
+    transition: 0.5s;
+    direction: rtl;
+}
+.contanair .box:hover{
+    transform: translate(0 ,-2%);
+}
+.box .logo{
+    width: 50%;
+    position: absolute;
+    transform: translate(-40%, -70%);
+    margin-left: 20px;
+}
+.box h1{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 45px;
+    color: #21130d;
+    padding-top: 60px;
+}
+.box form label{
+    font-size: 16px;
+    margin-bottom: 3px;
+    width: 25%;
+    font-weight: 600;
+}
+.box form div{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    width: 90%;
+}
+.box form div:hover{
+    border-bottom-color: var(--main-color) ;
+}
+.box form div i{
+    color: var(--sec-color);
+    margin: 0px 0px 15px 10px;
+    font-size: 20px
+}
+.box form i:hover {
+    color: var(--main-color) ;
+    cursor: pointer;
+}
+.box form .user-name{
+    margin-bottom: 35px;
+}
+.box form div input{
+    border: none;
+    flex: 1;
+    font-size: 13px;
+    outline: none;
+    padding: 10px;
+    border-radius: 17px;
+    margin-bottom: 10px;
+    cursor: auto;
+}
+.box form div #show{
+    margin: 0px 6px 12px 0px;;
+}
+
+.box form .password button:hover{
+    background-color: #fff;
+    color: var(--main-color);
+    transform: translate(0,-2px);
+}
+.box form div input::placeholder{
+    font-size: 15px;
+    color: #777;
+}
+.box form input[type='submit']{
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--main-color);
+    font-weight: bold;
+    transition: 0.5s;
+    margin: 20px 20px;
+    width: 90%;
+}
+.box form input[type='submit']:hover{
+    background-color: #fff;
+    color: var(--main-color)
+}
+/* ---------------------------end login----------------------------
+-------------------------------------------------------------------
+-------------------------------start home---------------------------------- */
+.nav-home{
+    height: 100px;
+    background-color: var(--sec-color);
+    display: flex;
+    justify-content: space-between;
+}
+.nav-home img{
+    height: 100%;
+    margin-left: 10px;
+}
+.nav-home ul{
+margin: 15px 0 0 0;
+}
+.nav-home ul li {
+list-style: none;
+display: inline-block;
+margin: 15px 25px 10px 10px;
+transition: 0.5s;
+}
+.nav-home ul .search{
+position: relative;
+}
+ 
+.nav-home ul .search .date{
+    background-color: #d4a3b6d4;
+    position: absolute;
+    top: 35px;
+    left: -100px;
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+    border-radius: 25px;
+    display: none;
+}
+.nav-home ul .search .date span{
+    position: absolute;
+    z-index: 5;
+    bottom: 99px;
+    left: 120px;
+    border-right: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 8px solid #d4a3b6d4;
+}
+.nav-home ul .search .date .sear{
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 40%;
+    background-color: var(--sec-color);
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-home ul .search .date .sear:hover{
+    background-color: #fff;
+    color: var(--sec-color);
+}
+.nav-home ul .search .date input{
+    margin: 0px 10px 10px 10px;
+}
+.nav-home ul .search label{
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main-color);
+}
+.nav-home ul li:hover{
+    transform: translate(0 ,-7px);
+}
+.nav-home ul li a{
+    text-decoration: none;
+    background-color: #e2e0e6a5;
+    padding: 10px 25px;
+    border-radius: 15px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.nav-home ul li a:hover{
+    background-color: #fff;
+    color: var(--main-color); 
+}
+.contanair-home{
+    height: 100vh;
+    text-align: center;
+}
+.contanair-home h2{
+    font-size: 53px;
+    margin: 35px;
+    color: var(--main-color);
+    width: 100%;
+}
+.contanair-home .tbscroll{
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: #b9b6b659;
+}
+table{
+    direction: rtl;
+    text-align: center;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin: auto;
+    font-weight: 600;
+    width: 85%;
+}
+table th,td{
+    padding: 10px;
+}
+table caption{
+font-size: 25px;
+background-color: var(--sec-color);
+font-weight: bold;
+padding: 7px 20px;
+border-radius: 20px;
+margin: 25px;
+color: #fff;
+}
+table thead{
+background-color: #000;
+color: #fff;
+}
+table tfoot{
+background-color: #555;
+color: #fff;
+}
+table tfoot .sum{
+text-align: left;
+}
+/* --------------------------------------end home ----------------
+------------------------------------------------------------------
+--------------------start Patient------------------------------- */
+.return-home{
+    display: inline;
+}
+.contanair-p{
+    height: 100vh;
+    margin: auto;
+}
+.contanair-p .new-p{
+    border: 2px solid #b9b6b6;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+.contanair-p .new-p h2{
+    text-align: center;
+    padding: 25px;
+    font-size: 40px;
+    background-color: #44f13e59;
+    margin-bottom: 25px;
+    border-radius: 25px;
+}
+.contanair-p .new-p form input{
+    display: block;
+    text-align: right;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 75%;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 1px solid #555;
+}
+.contanair-p .new-p form input::placeholder{
+    font-size: 20px;
+}
+.contanair-p .new-p form .all-radio{
+    display: flex;
+    justify-content: end;
+    margin-right: 40px;
+}
+.contanair-p .new-p form .radio{
+    display: inline-flex;
+    width: 15%;
+    direction: rtl;
+}
+.contanair-p .new-p form input[type='submit']{
+    font-weight: 600;
+    width: 30%;
+    background-color: #44f13e;
+    text-align: center;
+    font-size: 30px;
+    transition: 0.5s;
+    margin-top: 40px;
+}
+.contanair-p .new-p form input[type='reset']{
+    font-weight: 600;
+    width: 30%;
+    background-color: #e74a4a;
+    text-align: center;
+    font-size: 30px;
+    transition: 0.5s;
+}
+.contanair-p .new-p form input[type='submit']:hover{
+background-color: #59e355;
+transform: translate(-0 , -5px);
+} 
+.contanair-p .new-p form input[type='reset']:hover{
+    background-color: #e75e5e;
+    transform: translate(-0 , -5px);
+}
+/* --------------------------------------end Patient ----------------
+------------------------------------------------------------------
+--------------------start medical------------------------------- */
+.contanair-m{
+    height: 100vh;
+    margin: auto;
+}
+.contanair-m .new-m{
+    border: 2px solid #b9b6b6;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+.contanair-m .new-m h2{
+    text-align: center;
+    padding: 25px;
+    font-size: 40px;
+    background-color: #44f13e59;
+    margin-bottom: 25px;
+    border-radius: 25px;
+}
+.contanair-m .new-m form input{
+    display: block;
+    text-align: right;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 75%;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 1px solid #555;
+}
+.contanair-m .new-m form input::placeholder{
+    font-size: 20px;
+}
+.contanair-m .new-m form select{
+    display: block;
+    text-align: right;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 75%;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 1px solid #555;
+}
+.contanair-m .new-m form select option{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: var(--sec-color);
+    opacity: 0.6;
+    color: #fff;
+}
+.contanair-m .new-m form input[type='submit']{
+    font-weight: 600;
+    width: 30%;
+    background-color: #44f13e;
+    text-align: center;
+    font-size: 30px;
+    transition: 0.5s;
+    margin-top: 40px;
+}
+.contanair-m .new-m form input[type='reset']{
+    font-weight: 600;
+    width: 30%;
+    background-color: #e74a4a;
+    text-align: center;
+    font-size: 30px;
+    transition: 0.5s;
+}
+.contanair-m .new-m form input[type='submit']:hover{
+background-color: #59e355;
+transform: translate(-0 , -5px);
+} 
+.contanair-m .new-m form input[type='reset']:hover{
+    background-color: #e75e5e;
+    transform: translate(-0 , -5px);
+}
+/* --------------------------------------end medical ----------------
+------------------------------------------------------------------
+--------------------start manger------------------------------- */
+
+.contanair-manger{
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/manger.jpg);
+    background-size: cover;
+}
+.contanair-manger a{
+    margin: 0 15px 0 15px;
+    display: block;
+}
+.contanair-manger input[type='submit']{
+    font-weight: 600;
+    height: 60px;
+    background-color: #44f13e;
+    text-align: center;
+    font-size: 30px;
+    transition: 0.5s;
+    margin-top: 40px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 15px 50px;
+    width: 100%;
+}
+.contanair-manger  input[type='submit']:hover{
+background-color: #59e355;
+transform: translate(-0 , -5px);
+background-color: #fff;
+} 
+.contanair-manger a .report{
+    background-color: var(--sec-color);
+    color: #fff;
+}
+.contanair-manger a .report:hover{
+    background-color: #fff;
+    color: var(--sec-color);
+}
+/* -------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+ .new-worker{
+    border: 2px solid #b9b6b6;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+
+ .new-worker h2{
+    text-align: center;
+    padding: 25px;
+    font-size: 40px;
+    background-color: #44f13e59;
+    margin-bottom: 25px;
+    border-radius: 25px;
+}
+
+ .new-worker form input{
+    display: block;
+    text-align: right;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 75%;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 1px solid #555;
+}
+
+.new-worker form input::placeholder{
+    font-size: 20px;
+}
+
+.new-worker form select{
+    display: block;
+    text-align: right;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 75%;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 1px solid #555;
+}
+
+ .new-worker form select option{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: var(--sec-color);
+    opacity: 0.6;
+    color: #fff;
+}
+
+ .new-worker form .all-radio{
+    display: flex;
+    justify-content: end;
+    margin-right: 40px;
+}
+
+ .new-worker form .radio{
+    display: inline-flex;
+    width: 15%;
+    direction: rtl;
+}
+
+ .new-worker form input[type='submit']{
+    font-weight: 600;
+    width: 30%;
+    background-color: #44f13e;
+    text-align: center;
+    font-size: 30px;
+    transition: 0.5s;
+    margin-top: 40px;
+}
+
+ .new-worker form input[type='reset']{
+    font-weight: 600;
+    width: 30%;
+    background-color: #e74a4a;
+    text-align: center;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+ .new-worker form input[type='submit']:hover{
+background-color: #59e355;
+transform: translate(-0 , -5px);
+} 
+
+ .new-worker form input[type='reset']:hover{
+    background-color: #e75e5e;
+    transform: translate(-0 , -5px);
+}
+/* ----------------------doctor--------------------------------------- */
+
+ .new-doctor{
+    border: 2px solid #b9b6b6;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+
+ .new-doctor h2{
+    text-align: center;
+    padding: 25px;
+    font-size: 40px;
+    background-color: #44f13e59;
+    margin-bottom: 25px;
+    border-radius: 25px;
+}
+
+ .new-doctor form input{
+    display: block;
+    text-align: right;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 75%;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 1px solid #555;
+}
+
+ .new-doctor form input::placeholder{
+    font-size: 20px;
+}
+
+ .new-doctor form select{
+    display: block;
+    text-align: right;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 75%;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 1px solid #555;
+}
+
+ .new-doctor form select option{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: var(--sec-color);
+    opacity: 0.6;
+    color: #fff;
+}
+
+ .new-doctor form .all-radio{
+    display: flex;
+    justify-content: end;
+    margin-right: 40px;
+}
+
+ .new-doctor form .radio{
+    display: inline-flex;
+    width: 15%;
+    direction: rtl;
+}
+
+ .new-doctor form input[type='submit']{
+    font-weight: 600;
+    width: 30%;
+    background-color: #44f13e;
+    text-align: center;
+    font-size: 30px;
+    transition: 0.5s;
+    margin-top: 40px;
+}
+
+ .new-doctor form input[type='reset']{
+    font-weight: 600;
+    width: 30%;
+    background-color: #e74a4a;
+    text-align: center;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+ .new-doctor form input[type='submit']:hover{
+background-color: #59e355;
+transform: translate(-0 , -5px);
+} 
+
+ .new-doctor form input[type='reset']:hover{
+    background-color: #e75e5e;
+    transform: translate(-0 , -5px);
+}
+/* ---------------------------------------------------- */
+.contanair-d{
+    border: 2px solid #b9b6b6;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+
+ .contanair-d h2{
+    text-align: center;
+    padding: 25px;
+    font-size: 40px;
+    background-color: #44f13e59;
+    margin-bottom: 25px;
+    border-radius: 25px;
+}
+
+.contanair-d form input{
+    display: block;
+    text-align: right;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 75%;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 1px solid #555;
+}
+
+.contanair-d form input::placeholder{
+    font-size: 20px;
+}
+ .contanair-d form input[type='submit']{
+    font-weight: 600;
+    width: 30%;
+    background-color: #44f13e;
+    text-align: center;
+    font-size: 30px;
+    transition: 0.5s;
+    margin-top: 40px;
+}
+.contanair-d form input[type='submit']:hover{
+background-color: #59e355;
+transform: translate(-0 , -5px);
+} 
